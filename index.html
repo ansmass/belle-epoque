@@ -130,12 +130,42 @@
         
         <section class="container__section--third">
             <h2>Date à retenir</h2>
-            <div id="section__second--calendar">
+            
+            <div id="container">
                 <div id="header">
                     <div id="monthDisplay"></div>
+                    <div>
+                        <button id="backButton">Précédent</button>
+                        <button id="nextButton">Suivant</button>
+                    </div>
                 </div>
-                <button id="backButton">Précédent</button>
+                <div id="weekdays">
+                    <div>Dimanche</div>
+                    <div>Lundi</div>
+                    <div>Mardi</div>
+                    <div>Mercredi</div>
+                    <div>Jeudi</div>
+                    <div>Vendredi</div>
+                    <div>Samedi</div>
+                </div>
+                <div id="calendar"></div>
             </div>
+            
+            <div id="newEventModal">
+                <h3>Nouvel évenement</h3>
+                <input type="text" id="eventTitileInput" placeholder="Titre de l'évenement">
+                <button id="saveButton">Enregistrer</button>
+                <button id="cancelButton">Annuler</button>
+            </div>
+            
+            <div id="deleteEventModal">
+                <h3>Evenement</h3>
+                <p id="eventText"></p>
+                <button id="deleteButton">Supprimer</button>
+                <button id="closeButton">Fermer</button>
+            </div>
+            
+            <div id="modalBackDrop"></div>
         </section>
         
         <section class="container__section--fourth">
@@ -143,5 +173,6 @@
         </section>
     </main>
     
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

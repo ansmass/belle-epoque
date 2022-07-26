@@ -208,14 +208,158 @@ section{
 
 
 /*Third section*/
+.container__section--third button {
+    padding: 5px;
+    
+    width: 75px;
+    
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px gray;
+    
+    color: white;
+    
+    outline: none;
+    cursor: pointer;
+}
+
+
+#header{
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    color: #d36C6C;
+    font-size: 26px;
+}
+#header button {
+    background-color:#92a1d1;
+}
+
+
+#container{
+    width: 770px;
+}
+#weekdays{
+    width: 100%;
+    display: flex;
+    color: #247BA0;
+}
+#weekdays div{
+    padding: 10px;
+    width: 100px;
+}
+#calendar{
+    margin: auto;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.day{
+    padding: 10px;
+    margin: 5px;
+    box-sizing: border-box;
+    
+    width: 100px;
+    height: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    background-color: white;
+    box-shadow: 0px 0px 3px #CBD4C2;
+    
+    cursor: pointer;
+}
+.day:hover{
+    background-color: #e8faed;
+}
+.day + #currentDay{
+    background-color: #e8f4fa;
+}
 
 
 
+.event{
+    padding: 3px;
+    
+    max-height: 55px;
+    
+    border-radius: 5px;
+    background: #58bae4;
+    
+    font-size: 10px;
+    color: white;
+    
+    overflow: hidden;
+}
+.padding{
+    background-color: #FFFCFF !important;
+    box-shadow: none !important;
+    
+    cursor: default !important;
+}
+#newEventModal, #deleteEventModal{
+    padding: 25px;
+    
+    width: 350px;
+    
+    display: none;
+    
+    position: absolute;
+    top: 100px;
+    left: calc(50% - 175px);
+    z-index: 20;
+    
+    background-color: #e8f4fa;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 5px;
+    
+    font-family: sans-serif;
+}
+#eventTitleInupt{
+    padding: 10px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    
+    width: 100%;
+    
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px gray;
+    
+    outline: none;
+}
+#eventTitleInupt.error{
+    border: 2px solid red;
+}
 
+#cancelButton, #deleteButton {
+  background-color: #d36c6c;
+}
+#saveButton, #closeButton {
+  background-color: #92a1d1;
+}
 
-
-
-
-
+#eventText {
+  font-size: 14px;
+}
+#modalBackDrop {
+    width: 100vw;
+    height: 100vh;
+    
+    display: none;
+    
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+  
+    background-color: rgba(0,0,0,0.8);
+}
 /*Third section end*/
 /*MAIN CONTAINER END*/
