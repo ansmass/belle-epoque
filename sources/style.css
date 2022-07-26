@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --dark-grey: #1E1F1D;
+    --light-grey: #ADADAD;
+    --light2x-grey: #DBDBDB;
+    --white: #E9E9E9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: var(--white);
+    
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grey);
+}
+
+
+
+/*HEADER*/
+.header{
+    width: 90%;
+    height: 10vh;
+    
+    position: fixed;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Menu*/
+.header__menu--list{
+    display: flex;
+    list-style: none;
+}
+.header__menu--items a{
+    margin-right: 15px;
+    
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+/*Menu end*/
+/*HEADER END*/
+
+
+
+/*MAIN CONTAINER*/
+.container{
+    width: 100%;
+    height: auto;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+/*First section*/
+.container__section--first{
+    background-image: url("img/moulin.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.section__first--masque{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.section__first--masque h1{
+    font-size: 5vw;
+    color: var(--white);
+}
+.section__first--masque p{
+    font-size: 2.5vw;
+    color: var(--white);
+}
+/*First section end*/
+
+
+/*Second section*/
+.container__section--second{
+    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background-color: red;
+}
+.container__section--second > h2{
+    width: 100%;
+    
+    text-align: center;
+    font-weight: 400;
+    
+    background-color: pink;
+}
+
+/*Lessons cards*/
+.section__second--card-container{
+    width: 100%;
+    height: 60vh;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background-color: blue;
+}
+.cards{
+    width: 20%;
+    height: 60vh;
+    
+    display: flex;
+    flex-direction: column;
+    
+    border: none;
+    border-radius: 15px;
+    background-color: var(--light-grey);
+    box-shadow: -1px 4px 10px 5px rgba(0,0,0,0.37);
+}
+
+.cards-top{
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    align-items: center;
+}
+.cards-top > h3{
+    margin-left: 2vw;
+    font-weight: 300;
+}
+
+.cards-center{
+    width: 100%;
+    height: 40vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards-bottom{
+    width: 100%;
+    height: 10vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards-bottom button{
+    width: 40%;
+    height: 5vh;
+    
+    border: none;
+    border-radius: 25px;
+    background-color: var(--light2x-grey);
+}
+.cards-bottom button a{
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+/*Lessons cards end*/
+.section__second--all{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: green;
+}
+.section__second--all button{
+    width: 10%;
+    height: 5vh;
+    
+    border: none;
+    border-radius: 25px;
+    background-color: var(--light-grey);
+}
+.section__second--all button a{
+    color: var(--dark-grey);
+    text-decoration: none;
+}
+/*Second section end*/
+
+/*MAIN CONTAINER END*/
