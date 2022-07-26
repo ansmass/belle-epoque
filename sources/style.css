@@ -111,16 +111,12 @@ section{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
-    background-color: red;
 }
 .container__section--second > h2{
     width: 100%;
     
     text-align: center;
     font-weight: 400;
-    
-    background-color: pink;
 }
 
 /*Lessons cards*/
@@ -132,8 +128,6 @@ section{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    
-    background-color: blue;
 }
 .cards{
     width: 20%;
@@ -196,8 +190,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-color: green;
 }
 .section__second--all button{
     width: 10%;
@@ -213,4 +205,17 @@ section{
 }
 /*Second section end*/
 
+
+
+/*Third section*/
+
+
+
+
+
+
+
+
+
+/*Third section end*/
 /*MAIN CONTAINER END*/
